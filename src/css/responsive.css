@@ -1,0 +1,62 @@
+/*Celulares*/
+@media(max-width: 480px){
+    .div-logo h1{
+        font-size: 25px;
+        margin: 0;
+        width: auto;
+        padding: 0;
+    }
+
+    .div-logo{
+        width: auto;
+        padding: 0;
+        margin-top: 55px;
+    }
+    .img-contato{
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    .form-h2{
+        font-size: 25px;
+
+    }
+
+    .form-h3{
+        font-size: 20px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+}
+
+/*Tablet*/
+@media(max-width: 769px){
+    .div-logo h1{
+        margin-top: 60px;
+        width: auto;
+        padding: 0;
+    }
+    .img-contato{
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+    }
+
+    .inputs{
+        margin-top: 50px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    .botao-formulario{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 60px;
+    }    
+}

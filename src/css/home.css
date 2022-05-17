@@ -1,0 +1,454 @@
+/* HEADER */
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/background-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: zoom 10s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.sobre-header{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    overflow-y: hidden;
+}
+
+.sobre-header > p{
+    font-family: var(--montserrat);
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, 0.295);
+    width: 55%;
+    opacity: 0;
+    animation: moveBanner 1s 0.3s forwards;
+}
+
+.header-logo{
+    width: 200px;
+}
+
+.mudacor-header{
+    color: var(--vermelho-claro);
+}
+
+.div-ver-mais{
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    text-align: center;
+}
+
+.div-ver-mais > a{
+    font-family: var(--roboto);
+    color: #ffffff;
+}
+
+.div-ver-mais > i{
+    color: #8f000c;
+}
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0)  rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* QUEM SOMOS */
+#quem-somos{
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--vermelho-claro);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section > h1{
+    font-size: 36px;
+    font-family: var(--montserrat);
+    color: var(--preto);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section > h1 > img{
+    display: none;
+}
+
+.descricao-quem-somos{
+    text-align: center;
+    margin: 70px;
+    font-size: 18px;
+    color: var(--preto);
+    font-family: var(--montserrat);
+}
+
+.imagens-quem-somos{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-um, .img-tres{
+    display: none;
+}
+
+.imagens-quem-somos > img{
+    width: 100%;
+    height:  300px;
+}
+
+/* FILOSOFIA */
+#filosofia{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.descricao-filosofia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.descricao-filosofia > article{
+    width: 380px;
+    height: 350px;
+    margin-bottom: 50px;
+    background-color: var(--vermelho-claro);
+}
+
+.article-missao:hover, .article-visao:hover, .article-valores:hover{
+    transform: skew(-5deg);
+}
+
+.descricao-filosofia > article:last-child{
+    margin-bottom: 0;
+}
+
+.descricao-filosofia > article > div{
+    display: flex;
+}
+
+.descricao-filosofia > article > div > img{
+    width: 50px; 
+    height: 50px;
+    margin: 10px 20px 0 100px;
+}
+
+.descricao-filosofia > article > div > h3{
+    color: var(--preto);
+    text-align: center;
+    margin-top: 30px;
+    font-family: var(--montserrat);
+}
+
+.descricao-missao, .descricao-visao, .descricao-valores{
+    font-size: 18px;
+    font-family: var(--montserrat);
+    text-align: center;
+    color: var(--preto);
+    margin: 50px 20px;
+}
+
+/* NOSSOS DIFERENCIAIS */
+#diferenciais{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../imagens/background-madeira-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-diferencial{
+    color: white;
+}
+
+.descricao-diferenciais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao-diferenciais > hr{
+    display: none;
+}
+
+.descricao-diferenciais > article{
+    width: 360px;
+    height: 320px;
+    margin: 0 20px;
+}
+
+.descricao-diferenciais > article > h3{
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--montserrat);
+    color: white;
+}
+
+.descricao-diferenciais > article > p{
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--montserrat);
+    color: white;
+    margin-top: 30px;
+}
+
+.descricao-diferenciais > article > img{
+    margin: 8% 0 0 35%;
+}
+
+/* PRODUTOS */
+#produtos{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+#produtos > article{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--montserrat);
+    font-size: 18px;
+}
+
+.descricao-img-produtos{
+    margin: 20px 0;
+    height: 394px;
+    width: 624px;
+}
+
+.button-produtos{
+    display: flex;
+    align-items: center;
+    color: var(--preto);
+    background-color: transparent;
+    border: 2px solid var(--vermelho-escuro);
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: 1s;
+}
+
+.button-produtos > img{
+    margin-right: 8px;
+}
+
+.button-produtos:hover{
+    border: 2px solid var(--vermelho);
+    animation: pula 1s;
+}
+
+.comprar-a{
+    color: var(--preto);
+}
+
+/* SERVIÇOS */
+#servicos{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--vermelho-claro);
+}
+
+.descricao-servicos{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.descricao-servicos hr {
+    border-top: 1px solid black;
+}
+
+.servicos-um{
+    width: 90%;
+    height: 80%;
+}
+
+.servicos-dois{
+    width: 90%;
+    height: 80%;
+}
+
+.servicos-um > article, .servicos-dois > article{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+}
+
+.servicos-um > article > p, .servicos-dois > article > p{
+    font-size: 18px;
+    color: var(--vermelho-escuro);
+}
+
+.servicos-um > article > div > p, .servicos-dois > article > div > p{
+    font-size: 18px;
+    color: var(--preto);
+}
+
+.servicos-um > article > div > span, .servicos-dois > article > div > span{
+    font-size: 16px;
+    color: var(--preto);
+}
+
+@media screen and (min-width: 540px){
+    .header-logo{
+        width: 320px;
+    }    
+
+    .sobre-header > p{
+        font-size: 24px;
+    }
+    
+    .servicos-um > article > p, .servicos-dois > article > p{
+        font-size: 24px;
+    }
+    
+    .servicos-um > article > div > p, .servicos-dois > article > div > p{
+        font-size: 24px;
+    }
+    
+    .servicos-um > article > div > span, .servicos-dois > article > div > span{
+        font-size: 14px;
+    }
+    
+    section > h1 > img{
+        display: block;
+        padding: 0 50px;
+    }    
+}
+
+@media screen and (min-width: 768px){
+    .img-um, .img-tres{
+        display: block;
+    }
+    
+    .imagens-quem-somos > img{
+        width: 485px;
+        height:  300px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    /* FILOSOFIA */
+    .descricao-filosofia{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .descricao-filosofia > article{
+        margin-bottom: 0;
+    }
+
+    /* NOSSOS DIFERENCIAIS */
+    #diferenciais{
+        background-image: url(../imagens/background-madeira.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-around;
+    }
+
+    .descricao-diferenciais{
+        flex-direction: row;
+    }
+
+    .descricao-diferenciais > hr{
+        display: block;
+    }
+
+    /* PRODUTOS */
+    #produtos{
+        flex-direction: row;    
+    }    
+
+    /* SERVIÇOS */
+    #servicos{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--vermelho-claro);
+    }
+
+    .descricao-servicos{ 
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .servicos-um{
+        width: 45%;
+    }
+    
+    .servicos-dois{
+        width: 45%;
+    }
+
+    .servicos-um > article > div > span, .servicos-dois > article > div > span{
+        font-size: 18px;
+    }
+}

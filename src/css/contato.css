@@ -1,0 +1,236 @@
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/*Estilização conteúdo do main*/
+main{
+    background-color: var(--vermelho-claro);
+    font-family: var(--montserrat);
+}
+
+.container-fale-conosco{
+    margin-top: 50px;
+}
+
+.logo-fale-conosco{
+    width: 100px;
+    height: 100px;
+}
+
+.img-contato{
+    width: 80px;
+    height: 80px;
+}
+
+.div-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+}
+
+.div-logo > h1{
+    font-size: 36px;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 10px;
+    color: var(--preto);
+    width: 20%;
+}
+
+
+
+/*Estilização do formulário*/
+form{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 0 12px;
+    box-sizing: border-box;
+    
+}
+
+.aviso-completar{
+    text-align: center;
+    background-color: #fff3cd;
+    border-radius: 10px;
+    border: 2px solid #ffe9a9;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+}
+
+.mensagem-erro{
+    margin: 20px;
+    color: #664d03;
+}
+
+label{
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.caixa-formulario {
+    display:flex;
+    justify-content: center; 
+    margin: 25px 0 0 0;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--preto);
+}
+
+/* Pega o tamanho do formulário */
+.container-mensagem-sucesso{
+    width: 50%;
+}
+
+/* Tem o próprio tamanho */
+.tamanho-mensagem{
+    border-radius: 10px;
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #0f5132;
+    font-family: var(--roboto);
+    margin: 10% 0;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    border: 2px solid #0f51323a;
+}
+
+.mensagem-h4{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.p-mensagem, .descricao-mensagem{
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sucesso{
+    margin-bottom: 50px;
+    padding: 18px;
+    border-radius: 10px;
+    color: #28a745;
+    border-color: #28a745;
+    background-color: white;
+    font-size: 18px;
+    font-family: var(--roboto);
+    transition: 1s;
+    border: 2px solid #0f51323a;
+}
+
+.btn-sucesso:hover{
+    background-color: #28a745;
+    color: white;
+}
+
+/*Alteração de tamanho das fontes do título*/
+.form-h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 12px 24px 12px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+input:focus, textarea:focus, select:focus{
+    box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+.grupo-formulario input, select {
+    display:block;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: 1px double black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.botao-formulario {
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #000;
+}
+
+.botao-formulario:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.botao-formulario:hover:before{
+    width: 100%;
+}
+
+.footer-mapa{
+    margin-top: 20px;
+}
+
+.footer-mapa > p{
+    font-size: 24px;
+    padding-bottom: 25px;
+}
